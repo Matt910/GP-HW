@@ -138,7 +138,7 @@
     class wall{
             
       constructor(x,y,z){
-        this.wall = new THREE.Mesh(new THREE.BoxGeometry(x, y, z), new THREE.MeshPhongMaterial({color: 0xD2691E, opacity: 0.9, transparent: true} ));
+        this.wall = new THREE.Mesh(new THREE.BoxGeometry(x, y, z), new THREE.MeshPhongMaterial({color: 0x000000, opacity: 0.7, transparent: true} ));
         this.wall.position.set(0, 0, 0);
 				this.wall.point = new THREE.Vector3(0, 0, 0);
 				this.wall.normal = new THREE.Vector3(0, 0, 0);
@@ -211,7 +211,7 @@
     planeMat.wrapS = THREE.RepeatWrapping;
     planeMat.wrapT = THREE.RepeatWrapping;
     let plane = new THREE.Mesh(new THREE.PlaneGeometry(380, 200, 1, 1),
-        new THREE.MeshLambertMaterial({map: planeMat.load ("https://raw.githubusercontent.com/Matt910/GP-HW/master/air_hockey.png") }));
+        new THREE.MeshLambertMaterial({map: planeMat.load ("https://raw.githubusercontent.com/Matt910/GP-HW/master/soccer.jpg") }));
 		
     
     plane.rotation.x = -Math.PI / 2;
