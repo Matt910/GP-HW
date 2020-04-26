@@ -201,7 +201,7 @@
 
 
     let textureLoder = new THREE.TextureLoader();
-	var wd = textureLoder.load('https://raw.githubusercontent.com/Matt910/GP-HW/master/44.jpg');
+	var wd = textureLoder.load('https://raw.githubusercontent.com/Matt910/GP-HW/master/volcano.jpg');
 	scene.background = wd;
 
 
@@ -211,7 +211,7 @@
     planeMat.wrapS = THREE.RepeatWrapping;
     planeMat.wrapT = THREE.RepeatWrapping;
     let plane = new THREE.Mesh(new THREE.PlaneGeometry(380, 200, 1, 1),
-        new THREE.MeshLambertMaterial({map: planeMat.load ("https://raw.githubusercontent.com/Matt910/GP-HW/master/soccer.jpg") }));
+        new THREE.MeshLambertMaterial({map: planeMat.load ("https://raw.githubusercontent.com/Matt910/GP-HW/master/airhockey.png") }));
 		
     
     plane.rotation.x = -Math.PI / 2;
