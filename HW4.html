@@ -17,14 +17,8 @@
 	  width: 100%;
 	  padding: 5px;
 	  text-align: center;
-	  color: #ffff00
+	  color: #000000
 	}
-	
-	a {
-	  color: #00ffff
-	}
-	
-	 
 	
 	#container {
 	  z-index: 0;
@@ -45,14 +39,11 @@
   <script src="https://raw.githack.com/mrdoob/three.js/dev/examples/js/loaders/MTLLoader.js"></script>
   <script src="https://raw.githack.com/mrdoob/three.js/dev/examples/js/loaders/OBJLoader.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	
-  <div id = 'info' > HW4<br>   </div>
   
+  
+  <div id = 'info'> HW4<br> </div>
   
   <script>
-  
-
-
     class TwoLinkArm {
 	  static radius=2;
       constructor () {
@@ -81,7 +72,7 @@
         this.link1.add (this.link2)
         this.link2.position.x = 10;
 
-        this.paddle = new THREE.Mesh (new THREE.CylinderGeometry (3,3,2, 32), new THREE.MeshPhongMaterial({color:0xD85790,transparent: true}))
+        this.paddle = new THREE.Mesh (new THREE.CylinderGeometry (3,3,2, 32), new THREE.MeshPhongMaterial({color:0xFF4500,transparent: true}))
         this.link2.add (this.paddle)
         this.paddle.position.x = 10;
 
@@ -110,7 +101,7 @@
         this.pos = new THREE.Vector3(0,0,-30);
         this.vel = new THREE.Vector3(Math.random() * (100), 0, Math.random() * (100));
         this.mass = 1;
-        this.mesh = new THREE.Mesh(new THREE.CylinderGeometry(Circle.radius, Circle.radius, 5, 38), new THREE.MeshPhongMaterial({color:0x922DD6, opacity: 0.8, transparent: true}));
+        this.mesh = new THREE.Mesh(new THREE.CylinderGeometry(Circle.radius, Circle.radius, 5, 38), new THREE.MeshPhongMaterial({color:0x7FFFD4, opacity: 0.9, transparent: true}));
         this.force = new THREE.Vector3(0, -80, 0);
         this.light = new THREE.PointLight();
       }
